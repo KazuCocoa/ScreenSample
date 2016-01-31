@@ -58,6 +58,7 @@
 		726973B31C5E55AF008FFC06 /* ScreenSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		726973B71C5E55AF008FFC06 /* ScreenSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSampleUITests.swift; sourceTree = "<group>"; };
 		726973B91C5E55AF008FFC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		726973C51C5E56AB008FFC06 /* ScreenSample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScreenSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD8A854985BF886ABE6865B0 /* Pods-ScreenSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenSample/Pods-ScreenSample.debug.xcconfig"; sourceTree = "<group>"; };
 		EBE48A3A2C71618ACBE69C7A /* Pods-ScreenSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenSampleTests/Pods-ScreenSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2E652A7B207409FD6D8C596 /* Pods-ScreenSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScreenSampleTests/Pods-ScreenSampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 				7269739E1C5E55AE008FFC06 /* Assets.xcassets */,
 				726973A01C5E55AE008FFC06 /* LaunchScreen.storyboard */,
 				726973A31C5E55AE008FFC06 /* Info.plist */,
+				726973C51C5E56AB008FFC06 /* ScreenSample-Bridging-Header.h */,
 			);
 			path = ScreenSample;
 			sourceTree = "<group>";
@@ -578,10 +580,12 @@
 			baseConfigurationReference = CD8A854985BF886ABE6865B0 /* Pods-ScreenSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ScreenSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazucocoa.example.ScreenSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenSample/ScreenSample-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -590,10 +594,12 @@
 			baseConfigurationReference = 0B54F044F91ECF13CC22EE68 /* Pods-ScreenSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ScreenSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kazucocoa.example.ScreenSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenSample/ScreenSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
